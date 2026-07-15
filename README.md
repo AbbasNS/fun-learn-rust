@@ -50,3 +50,4 @@ A daily Rust tip series for developers coming from other languages (Java, Python
 46. [Build Profiles, or Why You Want `--release` Before Benchmarking](tips/46-build-profiles.md)
 47. [Cross-Compilation and Targets](tips/47-cross-compilation.md) · [discussion](tips/47-cross-compilation_discussion.md)
 48. [Build Scripts, When Cargo.toml Cannot Do Enough](tips/48-build-scripts.md)
+49. [Testing, the Topic We Postponed for 48 Tips](tips/49-testing.md)
