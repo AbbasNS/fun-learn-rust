@@ -52,3 +52,4 @@ A daily Rust tip series for developers coming from other languages (Java, Python
 48. [Build Scripts, When Cargo.toml Cannot Do Enough](tips/48-build-scripts.md) · [discussion](tips/48-build-scripts_discussion.md)
 49. [Testing, the Topic We Postponed for 48 Tips](tips/49-testing.md)
 50. [async/await, or Why Your Future Just Sits There](tips/50-async-fundamentals.md) · [discussion](tips/50-async-fundamentals_discussion.md)
+51. [Runtimes and Tokio](tips/51-runtimes-tokio.md)
