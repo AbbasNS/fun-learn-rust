@@ -1,6 +1,6 @@
 # Rust Tip of the Day
 
-A daily Rust tip series for developers coming from other languages (Java, Python, C++, JS/TS, C#, Go, Kotlin). The tips are listed in order below. Some have a follow-up discussion (reader questions and answers) in a companion file next to the tip.
+A daily Rust tip series for developers coming from other languages (Java, Python, C++, JS/TS, C#, Go, Kotlin). The tips live under [`tips/`](tips/) and are built into an [mdBook](https://rust-lang.github.io/mdBook/); [`tips/SUMMARY.md`](tips/SUMMARY.md) is the canonical table of contents. The tips are also listed in order below for quick browsing on GitHub. Some have a follow-up discussion (reader questions and answers) in a companion file next to the tip.
 
 1. [Macros Aren't As Bad As Other Languages Make Them To Be!](tips/01-macros.md)
 2. [macro_rules! - The Dark Arts of Token Matching!](tips/02-macro-rules.md)
