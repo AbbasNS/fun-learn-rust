@@ -1,0 +1,10 @@
+[book]
+title = "fun-learn-rust"
+authors = ["Abbas Sabra"]
+language = "en"
+src = "tips"
+
+[output.html]
+git-repository-url = "https://github.com/AbbasNS/fun-learn-rust"
+git-repository-icon = "fab-github"
+edit-url-template = "https://github.com/AbbasNS/fun-learn-rust/edit/main/{path}"
