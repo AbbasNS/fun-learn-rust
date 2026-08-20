@@ -1,4 +1,4 @@
-🦀 Tip of the day 33: Arc<T> and Mutex<T>, the Thread-Safe Versions
+🦀 Tip of the day 33: `Arc<T>` and `Mutex<T>`, the Thread-Safe Versions
 
 Tip [29](29-rc.md) introduced `Rc<T>` and tip [30](30-refcell.md) introduced `RefCell<T>`, both for single-threaded code. The compiler refuses to share either across threads, because the bookkeeping inside them (refcount for `Rc`, borrow tracker for `RefCell`) would race.
 
@@ -34,7 +34,7 @@ handle.join().unwrap();
 
 `Arc::clone` does the same thing as `Rc::clone` (bumps a refcount, hands you another pointer) except the count is updated atomically, which is what makes it thread-safe.
 
-That gets you shared *reads*. For shared *writes* across threads, wrap the data in `Mutex<T>`. A `Mutex` is a lock; calling `.lock()` gives you exclusive access until the returned guard is dropped.
+That gets you shared _reads_. For shared _writes_ across threads, wrap the data in `Mutex<T>`. A `Mutex` is a lock; calling `.lock()` gives you exclusive access until the returned guard is dropped.
 
 ```rust
 use std::sync::{Arc, Mutex};

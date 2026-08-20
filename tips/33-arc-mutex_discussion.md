@@ -1,6 +1,6 @@
 🦀 Tip of the day 33 follow-up
 
-Follow-up questions from the discussion on [Tip 33: Arc<T> and Mutex<T>, the Thread-Safe Versions](33-arc-mutex.md).
+Follow-up questions from the discussion on [Tip 33: `Arc<T>` and `Mutex<T>`, the Thread-Safe Versions](33-arc-mutex.md).
 
 ## If a Mutex must wrap the data it protects, what do you do when two separate pieces of data need to be protected together?
 

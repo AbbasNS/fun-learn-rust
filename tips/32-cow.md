@@ -1,13 +1,15 @@
-🦀 Tip of the day 32: Cow<T>, Borrow Or Own, Decide Later
+🦀 Tip of the day 32: `Cow<T>`, Borrow Or Own, Decide Later
 
 Last week we saw some std smart pointers; this week we cover another batch. Here is a high-level recap of the family, so you have the full picture of what exists in std.
 
 Already covered:
+
 - `Box` (tip [28](28-box.md)): heap allocation.
 - `Rc` (tip [29](29-rc.md)): shared ownership, single-threaded.
 - `RefCell` (tip [30](30-refcell.md)): interior mutability, single-threaded.
 
 This week:
+
 - `Cow` (today): borrow-or-own, no commitment upfront.
 - `Arc` + `Mutex`: thread-safe versions of `Rc` and `RefCell`.
 
@@ -58,4 +60,3 @@ A few honest costs:
 The takeaway: `Cow<'a, T>` is a single type that holds either a borrowed or an owned value, so a function can return either without committing in its signature. Use it to skip allocations that were not actually needed.
 
 🔇 Cow stands for clone-on-write. The mooing is implicit. 🐄
-

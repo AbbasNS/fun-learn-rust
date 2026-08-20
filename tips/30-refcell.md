@@ -1,4 +1,4 @@
-🦀 Tip of the day 30: RefCell<T>, Borrowing at Runtime
+🦀 Tip of the day 30: `RefCell<T>`, Borrowing at Runtime
 
 Tip [29](29-rc.md) left you with a problem. `Rc<T>` lets multiple owners share a value, but only hands out `&T`. If you need to mutate that shared value, the compile-time XOR rule blocks you, because the compiler cannot prove no other `Rc` is reading right now.
 
@@ -40,7 +40,7 @@ shared.borrow_mut().push(4);
 println!("{:?}", copy.borrow());  // [1, 2, 3, 4]
 ```
 
-One thing to clear up before the smaller cousin. For ordinary types, `&self` forbids mutation, and that is a real guarantee, not a polite suggestion. `Cell<T>` and `RefCell<T>` are deliberate exceptions, with a name for the pattern: *interior mutability*. From the outside the value still only exposes `&T`; the contents change *inside*. They are not regular types getting away with something. They are built on a language primitive called `UnsafeCell<T>`, the one hole Rust leaves for mutation through `&`. What keeps the exception sound is API discipline.
+One thing to clear up before the smaller cousin. For ordinary types, `&self` forbids mutation, and that is a real guarantee, not a polite suggestion. `Cell<T>` and `RefCell<T>` are deliberate exceptions, with a name for the pattern: _interior mutability_. From the outside the value still only exposes `&T`; the contents change _inside_. They are not regular types getting away with something. They are built on a language primitive called `UnsafeCell<T>`, the one hole Rust leaves for mutation through `&`. What keeps the exception sound is API discipline.
 
 `Cell` (for `Copy` types) never lends a reference into the cell at all, so nobody can observe a partial swap. `RefCell` does lend references, but tracks them at runtime to enforce XOR.
 
