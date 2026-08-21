@@ -1,6 +1,6 @@
 🦀 Tip of the day 32 follow-up
 
-Follow-up questions from the discussion on [Tip 32: Cow<T>, Borrow Or Own, Decide Later](32-cow.md).
+Follow-up questions from the discussion on [Tip 32: `Cow<T>`, Borrow Or Own, Decide Later](32-cow.md).
 
 ## If a function returns a `Cow` that borrows from its input, does the borrow checker always treat the input as borrowed, even when the value handed back is actually owned at runtime?
 

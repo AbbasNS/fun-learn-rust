@@ -1,4 +1,4 @@
-🦀 Tip of the day 28: Box<T>, Heap Allocation You Can See
+🦀 Tip of the day 28: `Box<T>`, Heap Allocation You Can See
 
 Until now, heap allocation in your Rust code has been hidden inside types like `Vec`, `String`, and `HashMap`. Each of them owns a heap buffer behind the scenes; you never had to allocate explicitly. `Box<T>` is the simplest case where you do.
 

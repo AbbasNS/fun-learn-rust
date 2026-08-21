@@ -1,6 +1,6 @@
 🦀 Tip of the day 28 follow-up
 
-Follow-up questions from the discussion on [Tip 28: Box<T>, Heap Allocation You Can See](28-box.md).
+Follow-up questions from the discussion on [Tip 28: `Box<T>`, Heap Allocation You Can See](28-box.md).
 
 ## Why does `let s = *b` move the value out of a `Box`? It does not seem to follow from the deref and ownership rules covered so far.
 
