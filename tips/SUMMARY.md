@@ -70,3 +70,4 @@
   - [Follow-up](./50-async-fundamentals_discussion.md)
 - [Runtimes and Tokio](./51-runtimes-tokio.md)
 - [Async I/O, or Why You Suddenly Need `tokio::fs`](./52-async-io.md)
+- [Spawning, Joining, Selecting, and Channels](./53-async-concurrency.md)
